@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Convergence&family=Mulish:wght@800&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(../images/forest-background.webp);
+}
+
+h1, h2{
+    font-family: Mulish, sans-serif;
+    color: #fff;
+    font-size: 30px;
+}
+
+span, p, button{
+    font-family: Convergence, sans-serif;
+    color: #fff;
+    font-size: 24px;
+}
+
+.game-wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-area{
+    height: auto;
+    width: auto;
+    background-color: rgba(188, 108, 37, 0.8);
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.question{
+    display: inline-flex;
+    margin: 0 10px;
+}
+
+.answer-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.answer--btn{
+    width: 50%;
+    height: auto;
+    margin: 20px 0;
+    /*background-color: red;*/
+    border-radius: 5%;
+    padding: 10px;
+}
+
+
+.ctrl-btn-area{
+    width: 100;
+    height: auto;
+    margin: 10px 0;
+    /*background-color: orange;*/
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ctrl--btn{
+    /*background-color: blue;*/
+    padding: 10px;
+    /*background-color: blueviolet;*/
+}
+
+.score-area{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /*background-color: yellow;*/
+}
