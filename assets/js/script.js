@@ -1,19 +1,27 @@
+/**
+ * An event listener that waits for DOM to finish loading
+ * Two functions are then called, one shuffles the order of array items
+ * and the other function displays a question from index [0] of the array
+ */
 document.addEventListener("DOMContentLoaded", function() {
-  shuffle(questionArray);
-  displayQuestion();
+  shuffle(questionArray); //shuffles the array
+  displayQuestion(); //displays first question
 });
 
-/*startGame(){
-  displayQuestion()
-}*/
 
+/**
+ * DOM elements are retrieved by ClassName or Id, and are stored in constant variables
+ */
 const quizQuestion = document.getElementById("question");
-const answerBtn = document.getElementsByClassName("answer--btn");
+const quizAnswerBtn = document.getElementsByClassName("answer--btn");
 const submitBtn = document.getElementById("submit--btn");
 const resetBtn = document.getElementById("reset--btn");
-let currentQuestionIndex = 0; // keeps track of current question index
 
-let questionArray = [ //creates an array of questions, possible answers, and a correct answer
+let currentQuestionIndex = 0; // keeps track of current question index, increments each time user submits an answer
+let correctScore = 0; // keeps track of correct answers
+let incorrectScore = 0; // keeps track of incorrect answers
+
+let questionArray = [ //creates an array of questions, possible answers, and correct answers
     {
       question: "What is the capital city of Australia?",
       choices: ["Sydney", "Melbourne", "Canberra", "Perth"],
@@ -158,31 +166,22 @@ function shuffle(questionArray){
   return questionArray;
 }
 
+
+/**
+ * Function that assigns the values of the question & choices objects, within the questionArray, to the innerHTML of DOM elements
+ * The Function also iterates through the quizAnswerBtns and adds an event listener to each of them
+ */
 function displayQuestion(){
-  const currentQuestion = questionArray[currentQuestionIndex];
-  const currentChoices = currentQuestion.choices;
+  let currentQuestion = questionArray[currentQuestionIndex]; // Based on the incremented value of currentQuestionIndex, retrieves a question object from array and assigns to currentQuestion variable (each increment assigns the next question)
+  let currentChoices = currentQuestion.choices; // stores choices array from question object within currentChoices variable
+
   console.log(currentQuestion)
   console.log(currentChoices)
+  
+  quizQuestion.innerHTML = currentQuestion.question; // retrieves question object and assigns to text content of HTML element within quizQuestion varaible
 
-  quizQuestion.innerHTML = currentQuestion.question;
-
-  for (let j = 0; j < currentChoices.length; j++){
-    answerBtn[j].innerHTML = currentChoices[j];
+  for (let j = 0; j < currentChoices.length; j++){ //for loop iterates over choices array, and assigns items to text content of HTML elements within quizAnswerBtn variable
+    quizAnswerBtn[j].innerHTML = currentChoices[j];
+    quizAnswerBtn[j].addEventListener("click", submitAnswer); // each iteration adds an event listener to the quizAnswerBtns, which listens out for a 'click' before calling submitAction()
   }
 }
-
-
-displayQuestion()
-
-function submitAnswer(){
-  if (currentQuestionIndex === 10){
-    alert("test")
-  }
-  currentQuestionIndex++;
-  displayQuestion()
-}
-
-
-submitBtn.addEventListener("click", submitAnswer)
-
-submitAnswer()
