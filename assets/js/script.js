@@ -1,4 +1,10 @@
-let quizQuestions = [ //creates an array of questions, possible answers, and a correct answer
+const quizQuestion = document.getElementById("question");
+const quizChoices = document.getElementsByClassName("answer--btn");
+const submitBtn = document.getElementById("submit--btn");
+const resetBtn = document.getElementById("reset--btn");
+let currentQuestiontIndex = 0; // keeps track of current question index
+
+const questionArray = [ //creates an array of questions, possible answers, and a correct answer
     {
       question: "What is the capital city of Australia?",
       possibleAnswers: ["Sydney", "Melbourne", "Canberra", "Perth"],
@@ -126,13 +132,26 @@ let quizQuestions = [ //creates an array of questions, possible answers, and a c
       }
   ];
 
-  function shuffleQuestions(){
-    quizQuestions = quizQuestions[Math.floor(Math.random() * quizQuestions.length)];
-    quizQuestions.possibleAnswers[Math.floor(Math.random() * quizQuestions.length)]
+
+/** 
+ * This function shuffles the questionArray
+ * using the Fisher - Yates Shuffle algorithm
+ * https://bost.ocks.org/mike/shuffle/
+*/
+function shuffle(questionArray){
+  let m = questionArray.length, t, i;
+  while (m){
+    i = Math.floor(Math.random() * m --);
+    t = questionArray[m];
+    questionArray[m] = questionArray[i];
+    questionArray[i] = t;
   }
+}
 
-  shuffleQuestions()
+shuffle(questionArray)
 
- 
-  console.log(quizQuestions.question)
+console.log(questionArray[0].question)
 
+  for (i = 0; i < questionArray.length; i++){
+    console.log(i)
+  }
