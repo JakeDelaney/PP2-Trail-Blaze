@@ -185,3 +185,26 @@ function displayQuestion(){
     quizAnswerBtn[j].addEventListener("click", submitAnswer); // each iteration adds an event listener to the quizAnswerBtns, which listens out for a 'click' before calling submitAction()
   }
 }
+
+/**
+ * Function that checks if the innerHTML content of the quizAnswerBtn variable, matches the correctAnswer property.
+ * ither the correctScore or incorrectScore variables will be incremented by 1 and assigned
+ * to the innerHTML content of their associated elements.
+ */
+function submitAnswer(){
+  let selectedAnswer = this.innerHTML; //takes innerHTML content from clicked quizAnswerBtn and assigns to selectedAnswer variable
+  let currentQuestion = questionArray[currentQuestionIndex];
+  if (selectedAnswer === currentQuestion.correctAnswer){ //if innerHTML content of selectedAnswer matches correctAnswer property of currentQuestion object, execute below code block
+    alert("You are correct!")
+    correctScore++ //increment correct score by 1
+    console.log(correctScore)
+    document.getElementById("correct-answer").innerHTML = correctScore; //set innerHTML content of "correct-answer" element to value of correctScore
+
+  } else{ //else if innerHTML content does not match correctAnswer property, execute below code block
+    alert("You are wrong...")
+    incorrectScore++ //increment incorrect score by 1
+    document.getElementById("incorrect-answer").innerHTML = incorrectScore; //set innerHTML content to to value of incorrectScore
+  }
+  currentQuestionIndex++; //increment this variable by 1, allowing the next indexed question to be displayed
+  displayQuestion() //pull the next question from the array
+}
