@@ -1,10 +1,20 @@
+document.addEventListener("DOMContentLoaded", function(){
+  alert("DOM loaded")
+  shuffle(questionArray)
+  console.log(questionArray[0].question)
+})
+
+startGame(){
+  displayQuestion()
+}
+
 const quizQuestion = document.getElementById("question");
 const quizChoices = document.getElementsByClassName("answer--btn");
 const submitBtn = document.getElementById("submit--btn");
 const resetBtn = document.getElementById("reset--btn");
 let currentQuestiontIndex = 0; // keeps track of current question index
 
-const questionArray = [ //creates an array of questions, possible answers, and a correct answer
+let questionArray = [ //creates an array of questions, possible answers, and a correct answer
     {
       question: "What is the capital city of Australia?",
       possibleAnswers: ["Sydney", "Melbourne", "Canberra", "Perth"],
@@ -146,12 +156,10 @@ function shuffle(questionArray){
     questionArray[m] = questionArray[i];
     questionArray[i] = t;
   }
+  return questionArray;
 }
 
 shuffle(questionArray)
 
-console.log(questionArray[0].question)
 
-  for (i = 0; i < questionArray.length; i++){
-    console.log(i)
-  }
+
