@@ -231,3 +231,6 @@ function submitAnswer(){
     quizAnswerBtn[i].style.backgroundColor =""; //iterates through quizAnswerBtn array and reverts colors back to none
   } }, 2000); //functions delays by 2 seconds
 }
+
+let test = document.getElementsByClassName("game-area")[0];
+test.style.display = "none";

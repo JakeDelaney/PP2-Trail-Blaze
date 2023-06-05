@@ -15,15 +15,39 @@ h1, h2{
     font-size: 30px;
 }
 
-span, p, button{
+span, p, button, li{
     font-family: Convergence, sans-serif;
     color: #fff;
-    font-size: 24px;
+    font-size: 34px;
+}
+
+
+.welcome-page-wrapper{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-page{
+    height: auto;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(188, 108, 37, 1);
+    border-radius: 5%;
+    text-align: center;
+    padding: 20px 0;
 }
 
 /*GAME WRAPPER*/
 
 .game-wrapper{
+    position: absolute;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -43,6 +67,7 @@ span, p, button{
 }
 
 /*QUESTION AREA*/
+
 .question-area{
     max-width: auto;
     padding: 0px 10px;
@@ -98,8 +123,4 @@ span, p, button{
     flex-direction: column;
     padding: -20px;
     /*background-color: yellow;*/
-}
-
-.welcome-page{
-    background-color: aqua;
 }
