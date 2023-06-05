@@ -184,9 +184,9 @@ function displayQuestion(){
   
   quizQuestion.innerHTML = currentQuestion.question; // retrieves question object and assigns to text content of HTML element within quizQuestion varaible
 
-  for (let j = 0; j < currentChoices.length; j++){ //for loop iterates over choices array, and assigns items to text content of HTML elements within quizAnswerBtn variable
-    quizAnswerBtn[j].innerHTML = currentChoices[j];
-    quizAnswerBtn[j].addEventListener("click", submitAnswer); // each iteration adds an event listener to the quizAnswerBtns, which listens out for a 'click' before calling submitAction()
+  for (let i = 0; i < currentChoices.length; i++){ //for loop iterates over choices array, and assigns items to text content of HTML elements within quizAnswerBtn variable
+    quizAnswerBtn[i].innerHTML = currentChoices[i];
+    quizAnswerBtn[i].addEventListener("click", submitAnswer); // each iteration adds an event listener to the quizAnswerBtns, which listens out for a 'click' before calling submitAction()
   }
 }
 
@@ -214,7 +214,7 @@ function submitAnswer(){
   }
 
   for (i = 0; i < quizAnswerBtn.length; i++){ 
-    quizAnswerBtn[i].style.backgroundColor = "red" //iterate through the quiz answer buttons, and apply the color red to each button
+    quizAnswerBtn[i].style.backgroundColor = "red" //iterate through the quizAnswerBtn array, and apply the color red to each button
     if (quizAnswerBtn[i].innerHTML === currentQuestion.correctAnswer){ 
       quizAnswerBtn[i].style.backgroundColor = "green" //change the color to green if the innerHTML of the buttom is equal to the correctAnswer property
     } 

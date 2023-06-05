@@ -33,8 +33,8 @@ span, p, button{
 
 .game-area{
     height: auto;
-    width: auto;
-    background-color: rgba(188, 108, 37, 0.8);
+    max-width: 320px;
+    background-color: rgba(188, 108, 37, 1);
     border-radius: 5%;
     display: flex;
     flex-direction: column;
@@ -43,10 +43,10 @@ span, p, button{
 }
 
 /*QUESTION AREA*/
-
-.question{
-    display: inline-flex;
-    margin: 0 10px;
+.question-area{
+    max-width: auto;
+    padding: 0px 10px;
+    margin-top: -10px;
 }
 
 /*ANSWER AREA*/
@@ -58,12 +58,18 @@ span, p, button{
 }
 
 .answer--btn{
-    width: 50%;
+    width: 70%;
     height: auto;
     margin: 20px 0;
-    /*background-color: red;*/
+    background-color: rgba(96, 108, 56, 1);
+    border: 2px solid black;
     border-radius: 5%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     padding: 10px;
+}
+
+.answer--btn:hover{
+    transform: translate(20px, 0)
 }
 
 /*CONTROLS AREA*/
@@ -88,7 +94,12 @@ span, p, button{
 .score-area{
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: space-evenly;
+    display: inline;
+    flex-direction: column;
+    padding: -20px;
     /*background-color: yellow;*/
+}
+
+.welcome-page{
+    background-color: aqua;
 }
