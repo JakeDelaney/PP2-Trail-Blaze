@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
 /**
  * DOM elements are retrieved by ClassName or Id, and are stored in constant variables
  */
+
+let gameWrapper = document.getElementsByClassName("game-area")[0];
 const quizQuestion = document.getElementById("question");
 const quizAnswerBtn = document.getElementsByClassName("answer--btn");
 const submitBtn = document.getElementById("submit--btn");
@@ -168,8 +170,10 @@ function shuffle(questionArray){
 
 
 /**
- * Function that assigns the values of the question & choices objects, within the questionArray, to the innerHTML of DOM elements
- * The Function also iterates through the quizAnswerBtns and adds an event listener to each of them
+ * Function that assigns the values of the question & choices objects, 
+ * within the questionArray, to the innerHTML of DOM elements.
+ * The Function also iterates through the quizAnswerBtns 
+ * and adds an event listener to each of them.
  */
 function displayQuestion(){
   let currentQuestion = questionArray[currentQuestionIndex]; // Based on the incremented value of currentQuestionIndex, retrieves a question object from array and assigns to currentQuestion variable (each increment assigns the next question)
@@ -186,18 +190,21 @@ function displayQuestion(){
   }
 }
 
+
+
 /**
- * Function that checks if the innerHTML content of the quizAnswerBtn variable, matches the correctAnswer property.
- * ither the correctScore or incorrectScore variables will be incremented by 1 and assigned
- * to the innerHTML content of their associated elements.
+ * Function that checks if the innerHTML content of the quizAnswerBtn 
+ * variable matches the correctAnswer property.
+  Either the correctScore or incorrectScore variables will be incremented by 1 
+  and assigned to the innerHTML content of their associated elements.
  */
 function submitAnswer(){
   let selectedAnswer = this.innerHTML; //takes innerHTML content from clicked quizAnswerBtn and assigns to selectedAnswer variable
   let currentQuestion = questionArray[currentQuestionIndex];
+
   if (selectedAnswer === currentQuestion.correctAnswer){ //if innerHTML content of selectedAnswer matches correctAnswer property of currentQuestion object, execute below code block
     alert("You are correct!")
     correctScore++ //increment correct score by 1
-    console.log(correctScore)
     document.getElementById("correct-answer").innerHTML = correctScore; //set innerHTML content of "correct-answer" element to value of correctScore
 
   } else{ //else if innerHTML content does not match correctAnswer property, execute below code block
@@ -205,6 +212,22 @@ function submitAnswer(){
     incorrectScore++ //increment incorrect score by 1
     document.getElementById("incorrect-answer").innerHTML = incorrectScore; //set innerHTML content to to value of incorrectScore
   }
+
+  for (i = 0; i < quizAnswerBtn.length; i++){ 
+    quizAnswerBtn[i].style.backgroundColor = "red" //iterate through the quiz answer buttons, and apply the color red to each button
+    if (quizAnswerBtn[i].innerHTML === currentQuestion.correctAnswer){ 
+      quizAnswerBtn[i].style.backgroundColor = "green" //change the color to green if the innerHTML of the buttom is equal to the correctAnswer property
+    } 
+  }
+
+  /**
+   * function within submitAnswer() that adds a delay to displaying the next question.
+   * This function also reverts any style color added to the quizAnswerBtn array.
+   */
+  setTimeout(function () {
   currentQuestionIndex++; //increment this variable by 1, allowing the next indexed question to be displayed
-  displayQuestion() //pull the next question from the array
+  displayQuestion(); //pull the next question from the array
+  for (i = 0; i < quizAnswerBtn.length; i++){
+    quizAnswerBtn[i].style.backgroundColor =""; //iterates through quizAnswerBtn array and reverts colors back to none
+  } }, 2000); //functions delays by 2 seconds
 }
