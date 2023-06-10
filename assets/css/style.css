@@ -7,16 +7,17 @@ body{
     margin: 0;
     box-sizing: border-box;
     background-image: url(../images/forest-background.webp);
+    font-family: Mulish, Convergence, sans-serif;
 }
 
 h1, h2{
-    font-family: Mulish, sans-serif;
+    font-family: Mulish;
     color: #fff;
     font-size: 30px;
 }
 
 span{
-    font-family: Convergence, sans-serif;
+    font-family: Convergence;
     color: #fff;
     font-size: 34px;
 }
@@ -48,11 +49,28 @@ span{
     font-size: 20px;
     text-align: center;
     margin-top: -5px;
+    font-family: Convergence;
+    color: #fff;
 }
 
 .welcome-page ul{
     font-size: 20px;
     margin-top: -5px;
+    font-family: Convergence;
+    color: #fff;
+    
+}
+
+.welcome-page li{
+    padding-top: 10px;
+}
+
+#start--btn{
+    font-size: 20px;
+    border-radius: 5%;
+    background-color: #606c38;
+    color: #fff;
+    padding: 10px;
 }
 
 
