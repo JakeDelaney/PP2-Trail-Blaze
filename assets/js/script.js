@@ -6,8 +6,8 @@
 document.addEventListener("DOMContentLoaded", function() {
   shuffle(questionArray); //shuffles the array
   displayQuestion(); //displays first question
+  document.getElementById("question-counter").innerHTML = currentQuestionIndex
 });
-
 
 /**
  * DOM elements are retrieved by ClassName or Id, and are stored in variables
@@ -21,9 +21,8 @@ const quizAnswerBtn = document.getElementsByClassName("answer--btn");
 const submitBtn = document.getElementById("submit--btn");
 const resetBtn = document.getElementById("reset--btn");
 
-let currentQuestionIndex = 0; // keeps track of current question index, increments each time user submits an answer
-let correctScore = 0; // keeps track of correct answers
-let incorrectScore = 0; // keeps track of incorrect answers
+let currentQuestionIndex = 1; // keeps track of current question index, increments each time user submits an answer
+let scoreCounter = 0; // keeps track of score counter, each correct answer increments counter by 1
 
 let questionArray = [ //creates an array of questions, possible answers, and correct answers
     {
@@ -212,14 +211,13 @@ function submitAnswer(){
   let selectedAnswer = this.innerHTML; //takes innerHTML content from clicked quizAnswerBtn and assigns to selectedAnswer variable
   let currentQuestion = questionArray[currentQuestionIndex];
 
-
   if (selectedAnswer === currentQuestion.correctAnswer){ //if innerHTML content of selectedAnswer matches correctAnswer property of currentQuestion object, execute below code block
-    correctScore++ //increment correct score by 1
-    document.getElementById("correct-answer").innerHTML = correctScore; //set innerHTML content of "correct-answer" element to value of correctScore
+    scoreCounter++ //increment correct score by 1
+    document.getElementById("score-counter").innerHTML = scoreCounter; //set innerHTML content of "correct-answer" element to value of correctScore
 
   } else{ //else if innerHTML content does not match correctAnswer property, execute below code block
-    incorrectScore++ //increment incorrect score by 1
-    document.getElementById("incorrect-answer").innerHTML = incorrectScore; //set innerHTML content to to value of incorrectScore
+    /*scoreCounter-- //increment incorrect score by 1*/
+    document.getElementById("score-counter").innerHTML = scoreCounter; //set innerHTML content to to value of incorrectScore
   }
 
   for (i = 0; i < quizAnswerBtn.length; i++){ 
@@ -235,6 +233,7 @@ function submitAnswer(){
    */
   setTimeout(function () {
   currentQuestionIndex++; //increment this variable by 1, allowing the next indexed question to be displayed
+  document.getElementById("question-counter").innerHTML = currentQuestionIndex
   displayQuestion(); //pull the next question from the array
   for (i = 0; i < quizAnswerBtn.length; i++){
     quizAnswerBtn[i].style.backgroundColor =""; //iterates through quizAnswerBtn array and reverts colors back to none
