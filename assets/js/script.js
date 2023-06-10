@@ -10,10 +10,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 /**
- * DOM elements are retrieved by ClassName or Id, and are stored in constant variables
+ * DOM elements are retrieved by ClassName or Id, and are stored in variables
  */
 
-let gameWrapper = document.getElementsByClassName("game-area")[0];
+const startBtn = document.getElementById("start--btn")
+let gamePage = document.getElementsByClassName("game-wrapper")[0];
+let welcomePage = document.getElementsByClassName("welcome-page-wrapper")[0]
 const quizQuestion = document.getElementById("question");
 const quizAnswerBtn = document.getElementsByClassName("answer--btn");
 const submitBtn = document.getElementById("submit--btn");
@@ -168,6 +170,14 @@ function shuffle(questionArray){
   return questionArray;
 }
 
+startBtn.addEventListener("click", startGame)
+gamePage.style.visibility = "hidden";
+welcomePage.style.visibility = "visibile"
+
+function startGame(){
+  gamePage.style.visibility = "visible";
+  welcomePage.style.visibility = "hidden"
+}
 
 /**
  * Function that assigns the values of the question & choices objects, 
@@ -202,13 +212,12 @@ function submitAnswer(){
   let selectedAnswer = this.innerHTML; //takes innerHTML content from clicked quizAnswerBtn and assigns to selectedAnswer variable
   let currentQuestion = questionArray[currentQuestionIndex];
 
+
   if (selectedAnswer === currentQuestion.correctAnswer){ //if innerHTML content of selectedAnswer matches correctAnswer property of currentQuestion object, execute below code block
-    alert("You are correct!")
     correctScore++ //increment correct score by 1
     document.getElementById("correct-answer").innerHTML = correctScore; //set innerHTML content of "correct-answer" element to value of correctScore
 
   } else{ //else if innerHTML content does not match correctAnswer property, execute below code block
-    alert("You are wrong...")
     incorrectScore++ //increment incorrect score by 1
     document.getElementById("incorrect-answer").innerHTML = incorrectScore; //set innerHTML content to to value of incorrectScore
   }
@@ -231,6 +240,3 @@ function submitAnswer(){
     quizAnswerBtn[i].style.backgroundColor =""; //iterates through quizAnswerBtn array and reverts colors back to none
   } }, 2000); //functions delays by 2 seconds
 }
-
-let test = document.getElementsByClassName("game-area")[0];
-test.style.display = "none";

@@ -15,7 +15,7 @@ h1, h2{
     font-size: 30px;
 }
 
-span, p, button, li{
+span{
     font-family: Convergence, sans-serif;
     color: #fff;
     font-size: 34px;
@@ -40,9 +40,21 @@ span, p, button, li{
     align-items: center;
     background-color: rgba(188, 108, 37, 1);
     border-radius: 5%;
-    text-align: center;
+    /*text-align: center;*/
     padding: 20px 0;
 }
+
+.welcome-page p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.welcome-page ul{
+    font-size: 20px;
+    margin-top: -5px;
+}
+
 
 /*GAME WRAPPER*/
 
