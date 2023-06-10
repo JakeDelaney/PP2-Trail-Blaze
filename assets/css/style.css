@@ -12,14 +12,14 @@ body{
 
 h1, h2{
     font-family: Mulish;
-    color: #fff;
+    color: #fefae0;
     font-size: 30px;
 }
 
 span{
     font-family: Convergence;
-    color: #fff;
-    font-size: 34px;
+    color: #fefae0;
+    font-size: 20px;
 }
 
 
@@ -50,14 +50,14 @@ span{
     text-align: center;
     margin-top: -5px;
     font-family: Convergence;
-    color: #fff;
+    color: #fefae0;
 }
 
 .welcome-page ul{
     font-size: 20px;
     margin-top: -5px;
     font-family: Convergence;
-    color: #fff;
+    color: #fefae0;
     
 }
 
@@ -68,9 +68,15 @@ span{
 #start--btn{
     font-size: 20px;
     border-radius: 5%;
-    background-color: #606c38;
-    color: #fff;
+    background-color: #dda15e;
+    color: #fefae0;
     padding: 10px;
+    font-family: Convergence;
+}
+
+#start--btn:hover{
+    transform: scale(110%);
+    transition: 1s;
 }
 
 
@@ -101,7 +107,7 @@ span{
 .question-area{
     max-width: auto;
     padding: 0px 10px;
-    margin-top: -10px;
+    margin-top: -30px;
 }
 
 /*ANSWER AREA*/
@@ -110,13 +116,14 @@ span{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: -10px;
 }
 
 .answer--btn{
     width: 70%;
     height: auto;
     margin: 20px 0;
-    background-color: rgba(96, 108, 56, 1);
+    background-color: #707f40;
     border: 2px solid black;
     border-radius: 5%;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -132,16 +139,25 @@ span{
 .ctrl-btn-area{
     width: 100;
     height: auto;
-    margin: 10px 0;
+    margin-top: 20px;
     /*background-color: orange;*/
     display: flex;
     justify-content: space-evenly;
 }
 
 .ctrl--btn{
-    /*background-color: blue;*/
+    font-size: 20px;
+    border-radius: 10%;
+    background-color: #dda15e;
+    width: 40%;
+    color: #fefae0;
     padding: 10px;
-    /*background-color: blueviolet;*/
+    font-family: Convergence;
+}
+
+.ctrl--btn:hover{
+    transform: scale(110%);
+    transition: 1s;
 }
 
 /*SCORE AREA*/
