@@ -230,7 +230,7 @@ function submitAnswer(){
    * This function also reverts any style color added to the quizAnswerBtn array.
    */
   setTimeout(function () {
-    if (currentQuestionIndex === 2){
+    if (currentQuestionIndex === 15){
       welcomePage.style.visibility = "hidden"
       gamePage.style.visibility = "hidden";
       finalScorePage.style.visibility = "visible";
