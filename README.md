@@ -73,7 +73,15 @@ A call to action button is displayed at the bottom, selecting "Return to start!"
 <br>
 
 ## Design
+### Background image
+*Placeholder for image*
+ <br>
+ 
 ### Color Scheme
+For the color scheme, I opted for a jungle inspired aesthetic that would fit the overall theme of the quiz (discovery/exploration.) The colors within this palette contrast each other well, and also compliment the background image of the quiz.
+
+![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/bac28348-6c35-4e16-bde6-00f58069369d)
+
 
 <br>
 
