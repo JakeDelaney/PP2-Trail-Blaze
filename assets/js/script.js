@@ -19,6 +19,7 @@ const startBtn = document.getElementById("start--btn")
 const quizQuestion = document.getElementById("question");
 const quizAnswerBtn = document.getElementsByClassName("answer--btn");
 const resetBtn = document.getElementById("reset--btn");
+const returnStartBtn = document.getElementById("return-start--btn")
 
 let currentQuestionIndex = 1; // keeps track of current question index, increments each time user submits an answer
 let scoreCounter = 0; // keeps track of score counter, each correct answer increments counter by 1
@@ -248,3 +249,4 @@ function reloadGame(){
 }
 
 resetBtn.addEventListener("click", reloadGame)
+returnStartBtn.addEventListener("click", reloadGame)
