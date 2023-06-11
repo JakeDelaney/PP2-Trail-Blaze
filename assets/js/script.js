@@ -9,13 +9,14 @@ document.addEventListener("DOMContentLoaded", function() {
   /*document.getElementById("question-counter").innerHTML = currentQuestionIndex*/
 });
 
+
 /**
  * DOM elements are retrieved by ClassName or Id, and are stored in variables for later use
  */
-
-const startBtn = document.getElementById("start--btn")
-let gamePage = document.getElementsByClassName("game-wrapper")[0];
 let welcomePage = document.getElementsByClassName("welcome-page-wrapper")[0]
+let gamePage = document.getElementsByClassName("game-wrapper")[0];
+let finalScorePage = document.getElementsByClassName("final-score-wrapper")[0];
+const startBtn = document.getElementById("start--btn")
 const quizQuestion = document.getElementById("question");
 const quizAnswerBtn = document.getElementsByClassName("answer--btn");
 const submitBtn = document.getElementById("submit--btn");
@@ -153,6 +154,17 @@ let questionArray = [ //creates an array of questions, possible answers, and cor
   ];
 
 
+welcomePage.style.visibility = "hidden"
+gamePage.style.visibility = "hidden";
+finalScorePage.style.visibility = "visible";
+startBtn.addEventListener("click", startGame)
+
+function startGame(){
+  gamePage.style.visibility = "visible";
+  welcomePage.style.visibility = "hidden"
+}
+
+
 /** 
  * This function shuffles the questionArray
  * using the Fisher - Yates Shuffle algorithm
@@ -169,14 +181,6 @@ function shuffle(questionArray){
   return questionArray;
 }
 
-startBtn.addEventListener("click", startGame)
-gamePage.style.visibility = "hidden";
-welcomePage.style.visibility = "visibile"
-
-function startGame(){
-  gamePage.style.visibility = "visible";
-  welcomePage.style.visibility = "hidden"
-}
 
 /**
  * Function that assigns the values of the question & choices objects, 
@@ -188,9 +192,6 @@ function displayQuestion(){
   let currentQuestion = questionArray[currentQuestionIndex]; // Based on the incremented value of currentQuestionIndex, retrieves a question object from array and assigns to currentQuestion variable (each increment assigns the next question)
   let currentChoices = currentQuestion.choices; // stores choices array from question object within currentChoices variable
 
-  console.log(currentQuestion)
-  console.log(currentChoices)
-  
   quizQuestion.innerHTML = currentQuestion.question; // retrieves question object and assigns to text content of HTML element within quizQuestion varaible
 
   for (let i = 0; i < currentChoices.length; i++){ //for loop iterates over choices array, and assigns items to text content of HTML elements within quizAnswerBtn variable
@@ -198,7 +199,6 @@ function displayQuestion(){
     quizAnswerBtn[i].addEventListener("click", submitAnswer); // each iteration adds an event listener to the quizAnswerBtns, which listens out for a 'click' before calling submitAction()
   }
 }
-
 
 
 /**
