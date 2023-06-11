@@ -6,11 +6,11 @@
 document.addEventListener("DOMContentLoaded", function() {
   shuffle(questionArray); //shuffles the array
   displayQuestion(); //displays first question
-  document.getElementById("question-counter").innerHTML = currentQuestionIndex
+  /*document.getElementById("question-counter").innerHTML = currentQuestionIndex*/
 });
 
 /**
- * DOM elements are retrieved by ClassName or Id, and are stored in variables
+ * DOM elements are retrieved by ClassName or Id, and are stored in variables for later use
  */
 
 const startBtn = document.getElementById("start--btn")
@@ -237,5 +237,5 @@ function submitAnswer(){
   displayQuestion(); //pull the next question from the array
   for (i = 0; i < quizAnswerBtn.length; i++){
     quizAnswerBtn[i].style.backgroundColor =""; //iterates through quizAnswerBtn array and reverts colors back to none
-  } }, 2000); //functions delays by 2 seconds
+  } }, 2000); //function delays by 2 seconds
 }
