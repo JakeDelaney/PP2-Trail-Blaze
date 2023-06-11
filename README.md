@@ -18,13 +18,18 @@ Explore a variety of topics, including world locations, landmarks, and cultures,
 
 ## User Experience (UX)
 * **First Time Visitor Goals**
-  * lorem ipsum
+  * As a first time visitor, I want the purpose of the site, and the rules of the quiz, to be apparent after the content has loaded.
+  * As a first time visitor, I want the ability to test my knowledge of geography, culture, and world location through an interactive quiz.
+  * As a first time visitor, I want to receive both positive and negative feedback in regards to the answers that I select.
+  * As a first time visitor, I want to seamlessly navigate through the quiz by using intuitive controls and calls to action.
 
 * **Returning Visitor Goals**
-  * lorem ipsum
+  * As a returning visitor, I want the quiz to display the questions in a randomized order to keep the experience fresh and fun. 
+  * As a returning visitor, I want my score to be tracked and tallied, so I can compare my progress with previous quiz attempts.
 
 * **Frequent User**
-  * lorem ipsum
+  * As a frequent user, I want to improve my knowledge of geography, culture, and world locations though repeated quizing.
+  * As a frequent user, I would like the quiz to demonstrate reponsive design, and allow me to play the quiz on different device viewports.
 
 <br>
 
