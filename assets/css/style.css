@@ -67,7 +67,7 @@ span, p, ul, button{
 }
 
 #start--btn:hover{
-    transform: scale(110%);
+    transform: scale(1.15);
     transition: 1s;
 }
 
@@ -128,7 +128,7 @@ span, p, ul, button{
 
 /*CONTROLS AREA*/
 .ctrl-btn-area{
-    width: 100;
+    width: auto;
     height: auto;
     margin-top: 20px;
     display: flex;
@@ -144,7 +144,7 @@ span, p, ul, button{
 }
 
 .ctrl--btn:hover{
-    transform: scale(110%);
+    transform: scale(1.15);
     transition: 1s;
 }
 
@@ -152,7 +152,6 @@ span, p, ul, button{
 .score-area{
     width: 100%;
     height: 100%;
-    padding: -20px;
 }
 
 #score-counter{

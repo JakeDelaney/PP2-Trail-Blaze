@@ -12,14 +12,14 @@ document.addEventListener("DOMContentLoaded", function() {
 /**
  * DOM elements are retrieved by ClassName or Id, and are stored in variables for later use
  */
-let welcomePage = document.getElementsByClassName("welcome-page-wrapper")[0]
+let welcomePage = document.getElementsByClassName("welcome-page-wrapper")[0];
 let gamePage = document.getElementsByClassName("game-wrapper")[0];
 let finalScorePage = document.getElementsByClassName("final-score-wrapper")[0];
-const startBtn = document.getElementById("start--btn")
+const startBtn = document.getElementById("start--btn");
 const quizQuestion = document.getElementById("question");
 const quizAnswerBtn = document.getElementsByClassName("answer--btn");
 const resetBtn = document.getElementById("reset--btn");
-const returnStartBtn = document.getElementById("return-start--btn")
+const returnStartBtn = document.getElementById("return-start--btn");
 
 let currentQuestionIndex = 1; // keeps track of current question index, increments each time user submits an answer
 let scoreCounter = 0; // keeps track of score counter, each correct answer increments counter by 1
@@ -153,14 +153,14 @@ let questionArray = [ //creates an array of questions, possible answers, and cor
   ];
 
 
-welcomePage.style.visibility = "visible"
+welcomePage.style.visibility = "visible";
 gamePage.style.visibility = "hidden";
 finalScorePage.style.visibility = "hidden";
-startBtn.addEventListener("click", startGame)
+startBtn.addEventListener("click", startGame);
 
 function startGame(){
   gamePage.style.visibility = "visible";
-  welcomePage.style.visibility = "hidden"
+  welcomePage.style.visibility = "hidden";
 }
 
 
@@ -211,17 +211,17 @@ function submitAnswer(){
   let currentQuestion = questionArray[currentQuestionIndex];
 
   if (selectedAnswer === currentQuestion.correctAnswer){ //if innerHTML content of selectedAnswer matches correctAnswer property of currentQuestion object, execute below code block
-    scoreCounter++ //increment correct score by 1
+    scoreCounter++; //increment correct score by 1
     document.getElementById("score-counter").innerHTML = scoreCounter; //set innerHTML content of "correct-answer" element to value of correctScore
 
   } else{ //else if innerHTML content does not match correctAnswer property, execute below code block
     document.getElementById("score-counter").innerHTML = scoreCounter; //set innerHTML content to to value of incorrectScore
   }
 
-  for (i = 0; i < quizAnswerBtn.length; i++){ 
-    quizAnswerBtn[i].style.backgroundColor = "red" //iterate through the quizAnswerBtn array, and apply the color red to each button
+  for (let i = 0; i < quizAnswerBtn.length; i++){ 
+    quizAnswerBtn[i].style.backgroundColor = "red"; //iterate through the quizAnswerBtn array, and apply the color red to each button
     if (quizAnswerBtn[i].innerHTML === currentQuestion.correctAnswer){ 
-      quizAnswerBtn[i].style.backgroundColor = "green" //change the color to green if the innerHTML of the buttom is equal to the correctAnswer property
+      quizAnswerBtn[i].style.backgroundColor = "green"; //change the color to green if the innerHTML of the buttom is equal to the correctAnswer property
     } 
   }
 
@@ -231,22 +231,22 @@ function submitAnswer(){
    */
   setTimeout(function () {
     if (currentQuestionIndex === 15){
-      welcomePage.style.visibility = "hidden"
+      welcomePage.style.visibility = "hidden";
       gamePage.style.visibility = "hidden";
       finalScorePage.style.visibility = "visible";
-      document.getElementById("final-score").innerHTML = scoreCounter
+      document.getElementById("final-score").innerHTML = scoreCounter;
     }
   currentQuestionIndex++; //increment this variable by 1, allowing the next indexed question to be displayed
-  document.getElementById("question-counter").innerHTML = currentQuestionIndex
+  document.getElementById("question-counter").innerHTML = currentQuestionIndex;
   displayQuestion(); //pull the next question from the array
-  for (i = 0; i < quizAnswerBtn.length; i++){
+  for (let i = 0; i < quizAnswerBtn.length; i++){
     quizAnswerBtn[i].style.backgroundColor =""; //iterates through quizAnswerBtn array and reverts colors back to none
   } }, 2000); //function delays by 2 seconds
 }
 
 function reloadGame(){
-  window.location.reload()
+  window.location.reload();
 }
 
-resetBtn.addEventListener("click", reloadGame)
-returnStartBtn.addEventListener("click", reloadGame)
+resetBtn.addEventListener("click", reloadGame);
+returnStartBtn.addEventListener("click", reloadGame);
