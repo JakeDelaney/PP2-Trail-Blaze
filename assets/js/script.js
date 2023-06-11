@@ -154,9 +154,9 @@ let questionArray = [ //creates an array of questions, possible answers, and cor
   ];
 
 
-welcomePage.style.visibility = "hidden"
+welcomePage.style.visibility = "visible"
 gamePage.style.visibility = "hidden";
-finalScorePage.style.visibility = "visible";
+finalScorePage.style.visibility = "hidden";
 startBtn.addEventListener("click", startGame)
 
 function startGame(){
@@ -232,6 +232,12 @@ function submitAnswer(){
    * This function also reverts any style color added to the quizAnswerBtn array.
    */
   setTimeout(function () {
+    if (currentQuestionIndex === 15){
+      welcomePage.style.visibility = "hidden"
+      gamePage.style.visibility = "hidden";
+      finalScorePage.style.visibility = "visible";
+      document.getElementById("final-score").innerHTML = scoreCounter
+    }
   currentQuestionIndex++; //increment this variable by 1, allowing the next indexed question to be displayed
   document.getElementById("question-counter").innerHTML = currentQuestionIndex
   displayQuestion(); //pull the next question from the array
