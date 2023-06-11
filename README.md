@@ -86,14 +86,15 @@ For the color scheme, I opted for a jungle inspired aesthetic that would fit the
 <br>
 
 ### Typography
+The font styles that I selected were Mulish (headings) and Convergence (paragraphs, spans, lists.) Both of these font styles were selected as they are playful, elegant, and suit each other well.
 
-<br>
+![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/c3df88fb-c6c5-4c89-9a0d-fffb364def9f)
 
-### Imagery
 
 <br>
 
 ### Wireframes
+*placeholder for wireframes*
 
 <br>
 
@@ -106,9 +107,25 @@ The below tests were carried out to verify site functionality. All tests were su
 
 ### W3C HTML Validator testing
 
+The index.html document of the quiz was validated through the W3C HTML Validator. During this test, no outstanding issues were found.
+
+![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/9ee79531-48ef-42ec-98d5-0a9eb14bc86c)
+
 <br>
 
 ### W3C CSS Validator Testing
+
+The style.css file of the quiz was validated through the W3C CSS Validator. During this test, no outstanding issues were found.
+
+![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/598954cc-15e2-4fc5-8528-0e16671bbde8)
+
+<br>
+
+### JShint JS Validator Testing
+
+The script.js file of the quiz was validated through the JShint Js Validator. During this test, no outstanding issues were found.
+
+![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/0eca19d3-6651-47d8-b212-44912affcc03)
 
 <br>
 
