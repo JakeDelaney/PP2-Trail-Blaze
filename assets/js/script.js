@@ -6,7 +6,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   shuffle(questionArray); //shuffles the array
   displayQuestion(); //displays first question
-  /*document.getElementById("question-counter").innerHTML = currentQuestionIndex*/
 });
 
 
@@ -19,7 +18,6 @@ let finalScorePage = document.getElementsByClassName("final-score-wrapper")[0];
 const startBtn = document.getElementById("start--btn")
 const quizQuestion = document.getElementById("question");
 const quizAnswerBtn = document.getElementsByClassName("answer--btn");
-const submitBtn = document.getElementById("submit--btn");
 const resetBtn = document.getElementById("reset--btn");
 
 let currentQuestionIndex = 1; // keeps track of current question index, increments each time user submits an answer
@@ -216,7 +214,6 @@ function submitAnswer(){
     document.getElementById("score-counter").innerHTML = scoreCounter; //set innerHTML content of "correct-answer" element to value of correctScore
 
   } else{ //else if innerHTML content does not match correctAnswer property, execute below code block
-    /*scoreCounter-- //increment incorrect score by 1*/
     document.getElementById("score-counter").innerHTML = scoreCounter; //set innerHTML content to to value of incorrectScore
   }
 
@@ -232,7 +229,7 @@ function submitAnswer(){
    * This function also reverts any style color added to the quizAnswerBtn array.
    */
   setTimeout(function () {
-    if (currentQuestionIndex === 15){
+    if (currentQuestionIndex === 2){
       welcomePage.style.visibility = "hidden"
       gamePage.style.visibility = "hidden";
       finalScorePage.style.visibility = "visible";
