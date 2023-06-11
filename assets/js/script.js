@@ -84,7 +84,7 @@ let questionArray = [ //creates an array of questions, possible answers, and cor
     {
       question: "What is the largest desert in the world?",
       choices: ["Sahara Desert", "Gobi Desert", "Arabian Desert", "Antarctic Desert"],
-      correctAnswer: "Sahara Desert"
+      correctAnswer: "Antarctic Desert"
     },
     {
       question: "Which city is located on two continents?",
@@ -245,3 +245,9 @@ function submitAnswer(){
     quizAnswerBtn[i].style.backgroundColor =""; //iterates through quizAnswerBtn array and reverts colors back to none
   } }, 2000); //function delays by 2 seconds
 }
+
+function reloadGame(){
+  window.location.reload()
+}
+
+resetBtn.addEventListener("click", reloadGame)

@@ -43,6 +43,10 @@ span, p, ul, button{
     padding: 20px 0;
 }
 
+.welcome-page h1{
+    text-align: center;
+}
+
 .welcome-page p{
     text-align: center;
     margin-top: -5px;
