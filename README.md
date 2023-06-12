@@ -185,11 +185,13 @@ Love Maths project for help with initial design and guidance
 * Github for file and website hosting.
 * FontAwesome for element icons.
 * CloudConvert for png/jpeg to WEBP conversion
+* Convertio for PNG to ICO conversion
 * FontJoy for font pairings.
 * Coolors for palette colour generation.
 
  ### Media 
 * Freepik for background imagery
+* flaticon for quiz favicon
  
  ### Acknowledgements
 * My tutor Derek McCaudley for guidance during the project.
