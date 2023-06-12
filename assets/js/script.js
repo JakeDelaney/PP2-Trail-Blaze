@@ -57,7 +57,7 @@ let questionArray = [ //creates an array of questions, possible answers, and cor
     },
     {
       question: "Which country is both in Europe and Asia?",
-      choices: ["Russia", "Turkey", "Kazakhstan", "Armenia"],
+      choices: ["Russia", "Spain", "Kazakhstan", "Armenia"],
       correctAnswer: "Russia"
     },
     {
@@ -149,7 +149,82 @@ let questionArray = [ //creates an array of questions, possible answers, and cor
       question: "Which city is known as the 'Eternal City'?",
       choices: ["Paris", "Rome", "Madrid", "Athens"],
       correctAnswer: "Rome"
-    }
+    },
+    {
+      question: "In which country is the Acropolis located?",
+      choices: ["Greece", "Italy", "Egypt", "Spain"],
+      correctAnswer: "Greece"
+    },
+    {
+      question: "Which country is famous for the Colosseum?",
+      choices: ["Italy", "Greece", "Spain", "Turkey"],
+      correctAnswer: "Italy"
+    },
+    {
+    question: "What is the national animal of Canada?",
+    choices: ["Beaver", "Moose", "Bald Eagle", "Polar Bear"],
+    correctAnswer: "Beaver"
+    },
+    {
+      question: "Which city is known as the 'City of Lights'?",
+      choices: ["Paris", "Las Vegas", "Dubai", "Sydney"],
+      correctAnswer: "Paris"
+    },
+    {
+      question: "In which country is the Kruger National Park located?",
+      choices: ["South Africa", "Kenya", "Tanzania", "Namibia"],
+      correctAnswer: "South Africa"
+    },
+    {
+      question: "What is the national dish of Italy?",
+      choices: ["Pizza", "Pasta", "Sushi", "Tacos"],
+      correctAnswer: "Pizza"
+    },
+    {
+      question: "Which city is famous for its carnival celebration?",
+      choices: ["Rio de Janeiro", "New Orleans", "Venice", "Sydney"],
+      correctAnswer: "Rio de Janeiro"
+    },
+    {
+      question: "Which country is known for Mount Fuji?",
+      choices: ["Japan", "South Korea", "China", "Vietnam"],
+      correctAnswer: "Japan"
+    },
+    {
+      question: "What is the highest waterfall in the world?",
+      choices: ["Angel Falls", "Niagara Falls", "Iguazu Falls", "Victoria Falls"],
+      correctAnswer: "Angel Falls"
+    },
+    {
+      question: "Which city is known as the 'City of Seven Hills'?",
+      choices: ["Rome", "Lisbon", "San Francisco", "Edinburgh"],
+      correctAnswer: "Rome"
+    },
+    {
+      question: "Which city is known as the 'Pearl of the Orient'?",
+      choices: ["Hong Kong", "Tokyo", "Shanghai", "Singapore"],
+      correctAnswer: "Hong Kong"
+    },
+    {
+      question: "Which country is famous for the Maasai Mara National Reserve?",
+      choices: ["Kenya", "Ethiopia", "Uganda", "South Africa"],
+      correctAnswer: "Kenya"
+    },
+    {
+      question: "What is the national flower of England?",
+      choices: ["Rose", "Tulip", "Lily", "Daffodil"],
+      correctAnswer: "Rose"
+    },
+    {
+      question: "In which country is the Serengeti National Park located?",
+      choices: ["Tanzania", "Kenya", "South Africa", "Uganda"],
+      correctAnswer: "Tanzania"
+    },
+    {
+      question: "In which country is the Ayers Rock (Uluru) located?",
+      choices: ["Australia", "New Zealand", "Indonesia", "Fiji"],
+      correctAnswer: "Australia"
+    },
   ];
 
 
