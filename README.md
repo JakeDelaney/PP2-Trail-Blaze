@@ -13,7 +13,7 @@ Explore a variety of topics, including world locations, landmarks, and cultures,
  * Testing
  * Deployment
  * Credits
-
+ * 
 <br>
 
 ## User Experience (UX)
@@ -34,7 +34,6 @@ Explore a variety of topics, including world locations, landmarks, and cultures,
 <br>
 
 ## Features
-
 ### Welcome section
 
 The welcome section provides the user with a brief background on the quiz, and an explanation of the quiz rules. A call to action button is displayed as the bottom the welcome section. When the user clicks this button, the quiz will begin.
@@ -62,6 +61,7 @@ The final score section marks the end of the quiz. This section becomes visible 
 A call to action button is displayed at the bottom, selecting "Return to start!" button will reload the quiz and return the user to the welcome section.
 
 ![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/6aee3c72-097e-4957-b14b-4448becd8f8d)
+
 <br>
 
 ### Future features to implement
@@ -70,6 +70,7 @@ A call to action button is displayed at the bottom, selecting "Return to start!"
 * An input section for a username. This username would be referenced at different points throughout the quiz.
 * Once the user has selected a possible answer, an included Google Maps API would display the location of the item within the correct answer property.
 * Toggable background music to accompany the user as they progress throughout the quiz
+
 <br>
 
 ## Design
@@ -86,14 +87,12 @@ For the color scheme, I opted for a jungle inspired aesthetic that would fit the
 
 ![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/bac28348-6c35-4e16-bde6-00f58069369d)
 
-
 <br>
 
 ### Typography
 The font styles that I selected were Mulish (headings) and Convergence (paragraphs, spans, lists.) Both of these font styles were selected as they are playful, elegant, and suit each other well.
 
 ![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/c3df88fb-c6c5-4c89-9a0d-fffb364def9f)
-
 
 <br>
 
@@ -109,9 +108,10 @@ Below are the wireframes that were created for the game section of the quiz. The
 
 ## Testing
 ### Site functionality
-The below tests were carried out to verify site functionality. All tests were successful and the site is working as intended.
+The below tests were carried out to verify the functionality of the quiz. All tests carried out received a passing grade, and all quiz functions have been confirmed as working.
 
-*placeholder for testing excel sheet*
+![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/3becb724-a08d-4f28-820d-2516250fcd37)
+
 <br>
 
 ### W3C HTML Validator testing
@@ -139,6 +139,13 @@ The script.js file of the quiz was validated through the JShint Js Validator. Du
 <br>
 
 ### Lighthouse report
+
+To verify if the quiz design has adhered to best practices during its development, lighthouse reports using chrome dev tools were generated. Both the mobile and desktop variants of the site ranked high across all metrics.
+
+![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/f26f6712-2b1f-4287-9d9e-e4aee31aa428)
+
+![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/23b0fead-7267-494f-bd73-c95b474cc2d4)
+
 
 <br>
 
