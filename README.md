@@ -74,7 +74,11 @@ A call to action button is displayed at the bottom, selecting "Return to start!"
 
 ## Design
 ### Background image
-*Placeholder for image*
+
+The background image that was selected is an animated 2D landscape of a forest trail. This image was chosen as it playful and vibrant, it elicits a positive emotional reponse, and sets the tone of the quiz the user is about to play.
+
+![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/0fd3461b-56c3-43dc-ae70-a19b8f178438)
+
  <br>
  
 ### Color Scheme
@@ -94,7 +98,12 @@ The font styles that I selected were Mulish (headings) and Convergence (paragrap
 <br>
 
 ### Wireframes
-*placeholder for wireframes*
+
+Below are the wireframes that were created for the game section of the quiz. The final quiz layout differs slightly compared to the initial wireframe design. These changes were a result of time constraints.
+
+![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/8b989e4e-a3b1-4aea-8eee-54e3d9ed7c65)
+![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/c02230c7-a0f6-4f14-b53d-704487822254)
+![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/482f117b-77fb-4f13-abb2-17f1895015c1)
 
 <br>
 
