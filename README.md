@@ -13,7 +13,7 @@ Explore a variety of topics, including world locations, landmarks, and cultures,
  * Testing
  * Deployment
  * Credits
- * 
+
 <br>
 
 ## User Experience (UX)
@@ -43,7 +43,6 @@ The welcome section provides the user with a brief background on the quiz, and a
 <br>
 
 ### Game section
-
 The game section is the main content of the quiz. Here the user is presented with a randomly picked question and four possible answers. Once the user has made a choice, the correct answer will highlight green, while the incorrect answers will highlight red.
 
 Two counters are also displayed here. One counter tracks the current question index, while the other counter keeps track of amount of questions the user has answered correctly.
@@ -55,7 +54,6 @@ If the user wishes to restart the quiz at any point, they can navigate to and cl
 <br>
 
 ### Final score section
-
 The final score section marks the end of the quiz. This section becomes visible to the user once 15 questions have been pulled from the question array. Here the user receives their final score tally that marks the total amount of questions that they have answered correctly.
 
 A call to action button is displayed at the bottom, selecting "Return to start!" button will reload the quiz and return the user to the welcome section.
@@ -75,7 +73,6 @@ A call to action button is displayed at the bottom, selecting "Return to start!"
 
 ## Design
 ### Background image
-
 The background image that was selected is an animated 2D landscape of a forest trail. This image was chosen as it playful and vibrant, it elicits a positive emotional reponse, and sets the tone of the quiz the user is about to play.
 
 ![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/0fd3461b-56c3-43dc-ae70-a19b8f178438)
@@ -97,7 +94,6 @@ The font styles that I selected were Mulish (headings) and Convergence (paragrap
 <br>
 
 ### Wireframes
-
 Below are the wireframes that were created for the game section of the quiz. The final quiz layout differs slightly compared to the initial wireframe design. These changes were a result of time constraints.
 
 ![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/8b989e4e-a3b1-4aea-8eee-54e3d9ed7c65)
@@ -115,7 +111,6 @@ The below tests were carried out to verify the functionality of the quiz. All te
 <br>
 
 ### W3C HTML Validator testing
-
 The index.html document of the quiz was validated through the W3C HTML Validator. During this test, no outstanding issues were found.
 
 ![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/9ee79531-48ef-42ec-98d5-0a9eb14bc86c)
@@ -123,7 +118,6 @@ The index.html document of the quiz was validated through the W3C HTML Validator
 <br>
 
 ### W3C CSS Validator Testing
-
 The style.css file of the quiz was validated through the W3C CSS Validator. During this test, no outstanding issues were found.
 
 ![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/598954cc-15e2-4fc5-8528-0e16671bbde8)
@@ -131,7 +125,6 @@ The style.css file of the quiz was validated through the W3C CSS Validator. Duri
 <br>
 
 ### JShint JS Validator Testing
-
 The script.js file of the quiz was validated through the JShint Js Validator. During this test, no outstanding issues were found.
 
 ![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/0eca19d3-6651-47d8-b212-44912affcc03)
@@ -139,7 +132,6 @@ The script.js file of the quiz was validated through the JShint Js Validator. Du
 <br>
 
 ### Lighthouse report
-
 To verify if the quiz design has adhered to best practices during its development, lighthouse reports using chrome dev tools were generated. Both the mobile and desktop variants of the site ranked high across all metrics.
 
 ![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/f26f6712-2b1f-4287-9d9e-e4aee31aa428)
@@ -150,8 +142,9 @@ To verify if the quiz design has adhered to best practices during its developmen
 <br>
 
 ### Identified bugs
+Multiple bugs were recorded during the development of the quiz. A record of these bugs can be found in the below table.
 
-*placeholder for bugs excel sheet*
+![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/6d5df184-f8d4-4d15-b07b-41bca1f02ce4)
 
 <br>
 
@@ -174,22 +167,36 @@ To verify if the quiz design has adhered to best practices during its developmen
  <br>
  
  ## Credits
- <br>
- 
  ### Technologies Used
    * HTML
    * CSS
    * JavaScript
+     
   <br>
   
  ### Code
+Love Maths project for help with initial design and guidance
+* For help with array shuffling - https://bost.ocks.org/mike/shuffle/
+* For help with quiz logic and design - https://www.youtube.com/playlist?list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF
+ 
 <br>
 
  ### Applications
+* Balsamiq Wireframes for help with initial site mockups.
+* Gitpod for the development environment.
+* Git for version control.
+* Github for file and website hosting.
+* FontAwesome for element icons.
+* CloudConvert for png/jpeg to WEBP conversion
+* FontJoy for font pairings.
+* Coolors for palette colour generation.
+
 <br>
 
  ### Media 
+* Freepik for background imagery
+ 
 <br>
 
  ### Acknowledgements
-    * My tutor Derek McCaudley for guidance during the project.
+ * My tutor Derek McCaudley for guidance during the project.
