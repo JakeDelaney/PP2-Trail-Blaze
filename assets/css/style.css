@@ -12,13 +12,13 @@ body{
 h1, h2{
     font-family: Mulish;
     color: #fefae0;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 span, p, ul, button{
     font-family: Convergence;
     color: #fefae0;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 /*WELCOME PAGE*/
@@ -33,14 +33,14 @@ span, p, ul, button{
 
 .welcome-page{
     height: auto;
-    width: 600px;
+    width: 37.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgba(188, 108, 37, 1);
     border-radius: 5%;
-    padding: 20px 0;
+    padding: 1.25em 0;
 }
 
 .welcome-page h1{
@@ -49,21 +49,21 @@ span, p, ul, button{
 
 .welcome-page p{
     text-align: center;
-    margin-top: -5px;
+    margin-top: -0.3125em;
 }
 
 .welcome-page ul{
-    margin-top: -5px; 
+    margin-top: -0.3125em; 
 }
 
 .welcome-page li{
-    padding-top: 10px;
+    padding-top: 0.625em;
 }
 
 #start--btn{
     border-radius: 5%;
     background-color: #dda15e;
-    padding: 10px;
+    padding: 0.625em;
 }
 
 #start--btn:hover{
@@ -84,7 +84,7 @@ span, p, ul, button{
 
 .game-area{
     height: auto;
-    max-width: 320px;
+    max-width: 20em;
     background-color: rgba(188, 108, 37, 1);
     border-radius: 5%;
     display: flex;
@@ -95,12 +95,12 @@ span, p, ul, button{
 
 /*QUESTION AREA*/
 .question-area{
-    padding: 0px 20px;
-    margin-top: -10px;
+    padding: 0em 1.25em;
+    margin-top: -0.625em;
 }
 
 .question-area h2{
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 /*ANSWER AREA*/
@@ -108,39 +108,39 @@ span, p, ul, button{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -10px;
+    margin-top: -0.625em;
 }
 
 .answer--btn{
     width: 70%;
     height: auto;
-    margin: 20px 0;
+    margin: 1.25em 0em;
     background-color: #707f40;
-    border: 2px solid black;
+    border: 0.125em solid black;
     border-radius: 5%;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    padding: 10px;
+    box-shadow: 0.625em 0.625em 0.3125em 0em rgba(0,0,0,0.75);
+    padding: 0.625em;
 }
 
 .answer--btn:hover{
-    transform: translate(20px, 0)
+    transform: translate(1.25em, 0)
 }
 
 /*CONTROLS AREA*/
 .ctrl-btn-area{
     width: auto;
     height: auto;
-    margin-top: 20px;
+    margin-top: 1.25em;
     display: flex;
     justify-content: space-evenly;
 }
 
 .ctrl--btn{
-    font-size: 20px;
+    font-size: 1.25rem;
     border-radius: 5%;
     background-color: #dda15e;
     width: 50%;
-    padding: 10px;
+    padding: 0.625em;
 }
 
 .ctrl--btn:hover{
@@ -155,7 +155,7 @@ span, p, ul, button{
 }
 
 #score-counter{
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 /*FINAL SCORE AREA*/
@@ -175,9 +175,9 @@ span, p, ul, button{
     width: auto;
     background-color: rgba(188, 108, 37, 1);
     border-radius: 5%;
-    padding: 20px 20px;
+    padding: 1.25em 1.25em;
 }
 
 #return-start--btn{
-    margin-top: 10px;
+    margin-top: 0.625em;
 }
