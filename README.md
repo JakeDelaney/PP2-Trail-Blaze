@@ -79,7 +79,7 @@ The background image that was selected is an animated 2D landscape of a forest t
 
 ![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/0fd3461b-56c3-43dc-ae70-a19b8f178438)
 
- <br>
+<br>
  
 ### Color Scheme
 For the color scheme, I opted for a jungle inspired aesthetic that would fit the overall theme of the quiz (discovery/exploration.) The colors within this palette contrast each other well, and also compliment the background image of the quiz.
@@ -140,7 +140,6 @@ To verify if the quiz design has adhered to best practices during its developmen
 
 ![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/23b0fead-7267-494f-bd73-c95b474cc2d4)
 
-
 <br>
 
 ### Identified bugs
@@ -159,30 +158,26 @@ Multiple bugs were recorded during the development of the quiz. A record of thes
 * Wait a few minutes for the page to build. It can then be accessed from the desired repository under the tab "Environments."
 
 ### How to clone this site
- * Navigate to the main page of the desired repository.
- * Click the "Code" option above the list of files.
- * Copy the repository URL, and then open up Git Bash.
- * Change the current working directory to a location for the cloned directory.
- * Enter the command 'git clone' and paste the copied URL.
- * Press enter to create a local clone.
- 
- <br>
+* Navigate to the main page of the desired repository.
+* Click the "Code" option above the list of files.
+* Copy the repository URL, and then open up Git Bash.
+* Change the current working directory to a location for the cloned directory.
+* Enter the command 'git clone' and paste the copied URL.
+* Press enter to create a local clone.
+
+<br>
  
  ## Credits
  ### Technologies Used
-   * HTML
-   * CSS
-   * JavaScript
+* HTML
+* CSS
+* JavaScript
      
-  <br>
-  
  ### Code
 Love Maths project for help with initial design and guidance
 * For help with array shuffling - https://bost.ocks.org/mike/shuffle/
 * For help with quiz logic and design - https://www.youtube.com/playlist?list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF
  
-<br>
-
  ### Applications
 * Balsamiq Wireframes for help with initial site mockups.
 * Gitpod for the development environment.
@@ -193,12 +188,8 @@ Love Maths project for help with initial design and guidance
 * FontJoy for font pairings.
 * Coolors for palette colour generation.
 
-<br>
-
  ### Media 
 * Freepik for background imagery
  
-<br>
-
  ### Acknowledgements
- * My tutor Derek McCaudley for guidance during the project.
+* My tutor Derek McCaudley for guidance during the project.
