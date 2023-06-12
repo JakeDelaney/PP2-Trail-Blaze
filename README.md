@@ -3,6 +3,8 @@ Introducing Trail Blaze, an interactive front-end website built with HTML, CSS, 
 
 Explore a variety of topics, including world locations, landmarks, and cultures, as you make your way through the game. Challenge yourself to improve your geographic expertise and enjoy the thrill of discovery with Trail Blaze!
 
+![image](https://github.com/JakeDelaney/PP2-Trail-Blaze/assets/76518393/59eecd6e-b722-4823-b30c-e703d6efb8d2)
+
 <br>
 
 ## Table of Contents
